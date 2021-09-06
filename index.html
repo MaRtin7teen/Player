@@ -4,11 +4,26 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SalesKen player</title>
+        <title>Player</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <div class="container">
+            <canvas id="canvas">
+                audio
+            </canvas>
+
+            <audio id="audio">
+                <source src="Utils/audio.mp3" type="audio/mp3">
+            </audio>
+
+            <div id="playerOptions">
+                <Button id="soundControl" onclick="sound()">sound off</Button>
+                <Button id="playControl" onclick="play()">play</Button>
+                <Button id="stopPlayer" onclick="stop()">stop</Button>
+                <Button id="fastForward" onclick="forward()">fast forward (5 sec)</Button>
+            </div>
+        </div>
 
         <script src="script.js"></script>
     </body>
